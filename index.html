@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pixi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="lib/pixi.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/view/RandomShape.js"></script>
+    <script src="js/view/RandomShape.js"></script>
+    <script src="js/model/ShapesGeneratorModel.js"></script>
+    <script src="js/view/ShapesGeneratorView.js"></script>
+    <script src="js/controller/ShapesGeneratorController.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Number of current shapes - <span id="shapes" class="badge">0</span> | Surface area occupied by shapes - <span id="surface" class="badge">0</span></div>
+                    <div class="panel-body">
+
+                        <div id="view"></div>
+
+                        <div class="form-inline">
+                            <label>Gravity Value - <span id="gv" class="badge">1</span></label>
+                            <button id="btnGVMax" type="button" class="btn btn-success btn-lg">+</button>
+                            <button id="btnGVMin" type="button" class="btn btn-danger btn-lg"> - </button>
+
+                        <div class="pull-right">
+                            <button id="btnPerSecMax" type="button" class="btn btn-success btn-lg">+</button>
+                            <button id="btnPerSecMin" type="button" class="btn btn-danger btn-lg"> - </button>
+                            <label>Number of shapes per sec - <span id="perSec" class="badge">0</span></label>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

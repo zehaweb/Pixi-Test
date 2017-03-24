@@ -1,0 +1,2 @@
+var APP_WIDTH = 640;
+var APP_HEIGHT = 460;
