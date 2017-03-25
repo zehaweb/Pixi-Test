@@ -31,6 +31,12 @@ ShapesGeneratorView.prototype = {
         this.gv.innerHTML = '' + this.model.gravity;
         this.surface.innerHTML = '' + this.model.surface;
 
+        if (this.model.numberOfShapesPerSecond == 0){
+            this.btnPerSecMin.disabled = true;
+        } else {
+            this.btnPerSecMin.disabled = false;
+        }
+
         var items = this.model.spritesList;
         items.forEach(function (item) {
             if (item.y > APP_HEIGHT) {
